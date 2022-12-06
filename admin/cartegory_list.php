@@ -32,9 +32,11 @@ $show_cartegory = $cartegory->show_cartegory();
             ?></td>
           <td> <?php echo $result['cartegory_id'] 
             ?></td>
-          <td><?php echo $result['cartegory_name'] 
+          <td><?php echo  $result['cartegory_name'] 
             ?></td>
-          <td><a href="">Sữa</a>|<a href="">Xóa</a></td>
+          <td><a href="cartegory_edit.php?cartegory_id=<?php echo $result['cartegory_id']?>">Sữa</a>|
+          <a href="cartegory_delete.php?cartegory_id=<?php echo $result['cartegory_id']?>">Xóa</a>
+          </td>
         </tr>
       </tbody>
       <?php  }}
