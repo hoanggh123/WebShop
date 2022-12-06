@@ -1,0 +1,139 @@
+.container-shoping {
+  margin: 80px auto;
+  width: 1350px;
+  height: 645px;
+}
+.shoping-content {
+  display: flex;
+  justify-content: space-between;
+}
+.content-cart {
+  margin-top: 32px;
+
+  width: 930px;
+}
+.content-total {
+  margin-top: 36px;
+  width: 420px;
+}
+.cart-checkout {
+  width: 1350px;
+  padding: 16px;
+  border: 1px solid #ccc;
+  margin: 16px auto;
+  border-radius: 16px 0;
+}
+.cart-title {
+  margin-left: 14px;
+}
+.shop-cart {
+  margin-left: 14px;
+}
+
+/*Check timeline*/
+
+.cart-checkout ul {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+.cart-checkout ul:before {
+  position: absolute;
+  height: 4px;
+  background-color: #e7e8e9;
+  content: "";
+  width: 97%;
+  top: 10px;
+  margin: 0 autos;
+}
+.cart-checkout ul li {
+  position: relative;
+  padding-top: 31px;
+  width: 68px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  color: #221f20;
+}
+.cart-checkout ul li:before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 24px;
+  z-index: 12;
+  border: 2px solid #e7e8e9;
+  background-color: white;
+}
+.cart-checkout ul li.active:before {
+  width: 18px;
+  height: 18px;
+  top: 2px;
+  border: 2px solid white;
+  z-index: 14;
+  background-color: #221f20;
+}
+.cart-checkout ul li.active:after {
+  content: "";
+  width: 100px;
+  background-color: #221f20;
+  height: 4px;
+  top: 10px;
+  position: absolute;
+  right: 28px;
+}
+/* Products*/
+
+.name {
+  width: 382px;
+}
+.tax {
+  width: 120px;
+}
+.amount {
+  width: 176px;
+}
+.total {
+  width: 144px;
+}
+.remove {
+  width: 78px;
+}
+thead {
+  padding: 16px 0;
+  border-bottom: 1px solid #ccc;
+  float: left;
+}
+/*Total product price*/
+.total-product,
+.total-price {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 10px 8px;
+}
+.title-product,
+.title-price {
+  color: #57585a;
+  font-family: Montserrat;
+  font-size: 16px;
+}
+.amount-product,
+.amount-price {
+  color: #221f20;
+  font-family: Montserrat;
+  font-weight: 600;
+}
+.inner-note {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  margin: 16px 0;
+}
+.note{
+   margin: 0 8px;
+}
