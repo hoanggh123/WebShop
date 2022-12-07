@@ -6,7 +6,7 @@ include "Class/cartegory_class.php";
 <?php
 $cartegory = new cartegory;
 if (!isset($_GET['cartegory_id']) || $_GET['cartegory_id'] ==null) {
-  echo "<script>window.location = 'cartegory_list.php'</script>";
+  echo "<script> window.location = 'cartegory_list.php'   </script>";
 }
 else{
   $cartegory_id = $_GET['cartegory_id'];
@@ -30,7 +30,7 @@ if($_SERVER ['REQUEST_METHOD'] === 'POST'){
     <form action="" method="POST">
       <input name="cartegory_name" type="text" placeholder="Nhập tên danh mục"
         value="<?php echo $result['cartegory_name'] ?>">
-      <button type="submit">Thêm</button>
+      <button type="submit">Sửa</button>
     </form>
   </div>
 </div>

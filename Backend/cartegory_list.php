@@ -20,13 +20,14 @@ $show_cartegory = $cartegory->show_cartegory();
           <th>Hành đông</th>
         </tr>
       </thead>
+      <tbody>
       <?php
             if($show_cartegory){
               $i=0;
               while($result = $show_cartegory->fetch_assoc()){
                 $i++;
             ?>
-      <tbody>
+      
         <tr>
           <td> <?php echo $i 
             ?></td>
@@ -35,12 +36,12 @@ $show_cartegory = $cartegory->show_cartegory();
           <td><?php echo  $result['cartegory_name'] 
             ?></td>
           <td><a href="cartegory_edit.php?cartegory_id=<?php echo $result['cartegory_id']?>">Sữa</a>|
-          <a href="cartegory_delete.php?cartegory_id=<?php echo $result['cartegory_id']?>">Xóa</a>
+            <a href="cartegory_delete.php?cartegory_id=<?php echo $result['cartegory_id']?>">Xóa</a>
           </td>
         </tr>
-      </tbody>
       <?php  }}
             ?>
+             </tbody>
     </table>
   </div>
 </div>

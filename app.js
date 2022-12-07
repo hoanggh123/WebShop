@@ -32,11 +32,11 @@ function addCart(productImg, productName, productPrice) {
   var addTr = document.createElement("tr");
   var cartItem = document.querySelectorAll("tbody tr");
   // for (var i = 0; i < cartItem.length; i++) {
-  //   var productT = document.querySelectorAll(".cart-name");
+  //   var productT = document.getElementsByClassName("cart-name");
   //   if (productT[i].innerHTML == productName) {
   //     alert("Sản phẩm đã có sẳn trong giỏ hàng");
-  //     return;
   //   }
+  //   return;
   // }
   var trContent =
     '<tr><td class="container-name"><img src="' +

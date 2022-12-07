@@ -3,8 +3,8 @@
         <ul class="admin-nav">
           <li class="admin-navsub"><a href="" class="admin-sublink">Danh mục</a>
             <ul class="nav-navsub">
-              <li class="navsub-item"><a href="" class="sublink">Thêm danh mục</a></li>
-              <li class="navsub-item"><a href="" class="sublink">Danh sách danh
+              <li class="navsub-item"><a href="cartegory_add.php" class="sublink">Thêm danh mục</a></li>
+              <li class="navsub-item"><a href="cartegory_list.php" class="sublink">Danh sách danh
                   mục</a></li>
 
             </ul>

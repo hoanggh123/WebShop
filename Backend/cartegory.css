@@ -11,7 +11,7 @@ li {
 a {
   text-decoration: none;
 }
-.cartegory-heading{
+.cartegory-heading {
   color: rgb(231, 52, 52);
 }
 .admin-content {
@@ -74,10 +74,6 @@ a {
 
 .content-table tbody tr {
   border-bottom: 1px solid #dddddd;
-}
-
-.content-table tbody tr:nth-of-type(even) {
-  background-color: #f3f3f3;
 }
 
 .content-table tbody tr:last-of-type {
