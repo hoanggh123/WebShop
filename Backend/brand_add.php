@@ -22,13 +22,11 @@ if($_SERVER ['REQUEST_METHOD'] === 'POST'){
         if($show_cartegory){
           while($result = $show_cartegory -> fetch_assoc()){   
         ?>
-        <option value="" <?php echo $result ['cartegory_id'] ?>><?php echo $result ['cartegory_name'] ?></option>
+        <option value="<?php echo $result ['cartegory_id'] ?>"><?php echo $result ['cartegory_name'] ?></option>
         <?php
          }
         }
         ?>
-
-
       </select>
       <input required name="brand_name" type="text" placeholder="Nhập tên loại sản phẩm">
       <button type="submit">Thêm</button>

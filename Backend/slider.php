@@ -12,9 +12,9 @@
           <li class="admin-navsub"><a href="" class="admin-sublink">Loại sản
               phẩm</a>
             <ul class="nav-navsub">
-              <li class="navsub-item"><a href="" class="sublink">Thêm loại sản
+              <li class="navsub-item"><a href="brand_add.php" class="sublink">Thêm loại sản
                   phẩm</a></li>
-              <li class="navsub-item"><a href="" class="sublink">Danh mục sản
+              <li class="navsub-item"><a href="brand_list.php" class="sublink">Danh mục sản
                   phẩm</a></li>
 
             </ul></li>

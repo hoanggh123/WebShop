@@ -12,9 +12,9 @@ class brand {
   {
     $query  = "INSERT INTO tbl_brand(cartegory_id,brand_name) VALUES ('$cartegory_id','$brand_name')";
     $result = $this->db->insert($query);
-    header(
-      'Location:cartegory_list.php'
-    );
+    // header(
+    //   'Location:cartegory_list.php'
+    // );
     return $result;
   }
   public function show_cartegory(){ 
