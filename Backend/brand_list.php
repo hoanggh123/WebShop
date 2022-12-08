@@ -16,8 +16,9 @@ $show_brand = $brand->show_brand();
         <tr>
           <th>STT</th>
           <th>Id sản phẩm</th>
-          <th>Id danh mục</th>
-          <th>Sản phẩm</th>
+          <th>Id danh muc</th>
+          <th>Tên danh mục</th>
+          <th>Tên sản phẩm</th>
           <th>Hành đông</th>
         </tr>
       </thead>
@@ -31,8 +32,9 @@ $show_brand = $brand->show_brand();
         <tr>
           <td> <?php echo $i 
             ?></td>
-            <td> <?php echo $result['brand_id'] ?></td>
+          <td> <?php echo $result['brand_id'] ?></td>
           <td> <?php echo $result['cartegory_id'] ?></td>
+          <td> <?php echo $result['cartegory_name'] ?></td>
           <td><?php echo  $result['brand_name'] ?></td>
           <td><a href="brand_edit.php?brand_id=<?php echo $result['brand_id']?>">Sữa</a>|
             <a href="brand_delete.php?brand_id=<?php echo $result['brand_id']?>">Xóa</a>
@@ -45,7 +47,6 @@ $show_brand = $brand->show_brand();
   </div>
 </div>
 </section>
-
 </body>
 
 </html>
