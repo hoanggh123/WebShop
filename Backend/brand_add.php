@@ -11,7 +11,7 @@ if($_SERVER ['REQUEST_METHOD'] === 'POST'){
   $insert_brand = $brand->insert_brand($cartegory_id, $brand_name);
 }
 ?>
-<div class="content-row2">W
+<div class="content-row2">
   <div class="admin-search">
     <h2 class="search-header">Thêm loại sản phẩm</h2>
     <form action="" method="POST">
