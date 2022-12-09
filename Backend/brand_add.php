@@ -13,8 +13,8 @@ if($_SERVER ['REQUEST_METHOD'] === 'POST'){
 ?>
 <div class="content-row2">
   <div class="admin-search">
-    <h2 class="search-header">Thêm loại sản phẩm</h2>
-    <form action="" method="POST">
+    <h2 class="search-header">Quản lí loại sản phẩm</h2>
+    <form class="form-cartegory" action="" method="POST">
       <select name="cartegory_id" id="">
         <option value="#">--Chọn danh mục</option>
         <?php 
@@ -28,8 +28,8 @@ if($_SERVER ['REQUEST_METHOD'] === 'POST'){
         }
         ?>
       </select>
-      <input required name="brand_name" type="text" placeholder="Nhập tên loại sản phẩm">
-      <button type="submit">Thêm</button>
+      <input required style="margin-left: 12px;" name="brand_name" type="text" placeholder="Nhập tên loại sản phẩm">
+      <button  class="btn"  type="submit">Thêm</button>
     </form>
   </div>
 </div>

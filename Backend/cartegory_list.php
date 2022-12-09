@@ -10,7 +10,7 @@ $show_cartegory = $cartegory->show_cartegory();
 ?>
 <div class="content-row2">
   <div class="cartegory_list">
-    <h2 class="search-header">Thêm danh mục</h2>
+    <h2 class="search-header">Danh sách danh mục</h2>
     <table class="content-table">
       <thead>
         <tr>

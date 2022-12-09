@@ -15,6 +15,6 @@
 </head>
 
 <body>
-  <header>
-    <h1 class="cartegory-heading">Top</h1>
-  </header>
+<header>
+      <h1 class="product-heading">Trang quản lí </h1>
+    </header>

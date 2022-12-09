@@ -11,55 +11,49 @@ li {
 a {
   text-decoration: none;
 }
-.cartegory-heading {
-  color: rgb(231, 52, 52);
-}
+/*Cartegory*/
 .admin-content {
-  width: 1350px;
   display: flex;
-  margin: 0 auto;
+  margin-top: 40px;
+  border-top: 1px solid #cccccc;
 }
-.content-row1 {
-  margin: 16px 0;
-  width: 25%;
-  height: 100%;
-}
-.admin-nav {
-  padding: 12px 8px !important;
-}
-.admin-navsub {
-  margin: 24px 0;
-}
-.admin-sublink {
-  color: rgb(11, 11, 11);
-  font-weight: 700;
-  font-size: 18px;
+.content-list {
+  width: 20%;
+  border-right: 1px solid #cccc;
 }
 
+.admin-navsub {
+  padding: 12px 0;
+  color: rgb(17, 17, 17);
+  margin: 0 12px;
+}
 .nav-navsub {
-  margin: 8px 12px;
+  margin: 8px 0;
 }
 .navsub-item {
-  margin: 4px 8px;
+  margin: 4px 0;
 }
 .sublink {
   color: rgba(62, 62, 62, 0.8);
   font-size: 16px;
+  margin: 8px 12px;
 }
-.box-body {
-  width: 100%;
+.box-body,
+.content-row2 {
+  width: 25%;
+}
+.search-header {
+  margin: 12px 8px;
 }
 .content-table {
+  margin: 24px;
   border-collapse: collapse;
   font-size: 0.9em;
   width: 772px;
   height: 393px;
-  margin: 0 auto;
   border-radius: 5px 5px 0 0;
-  overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
-
 .content-table thead tr {
   background-color: #009879;
   color: #ffffff;
@@ -83,4 +77,53 @@ a {
 .content-table tbody tr.active-row {
   font-weight: bold;
   color: #009879;
+}
+
+/*Product*/
+.content-product {
+  width: 100%;
+}
+.form {
+  margin: 0 12px;
+}
+.form-cartegory {
+  display: flex;
+  margin: 24px;
+}
+
+.product-heading {
+  text-align: center;
+  margin: 44px;
+}
+.admin-search {
+  margin: 8px 12px;
+}
+.product_input {
+  padding: 10px 20px;
+  width: 700px;
+  margin: 12px 0;
+  outline: none;
+}
+.product_item {
+  margin: 12px 0;
+}
+.product_option {
+  margin: 6px 0;
+}
+.title {
+  font-size: 18px;
+  padding-bottom: 8px;
+}
+.text {
+  padding: 8px 12px;
+  width: 700px;
+  height: 200px;
+}
+.btn {
+  margin-left: 8px;
+}
+
+.product_btn {
+  float: right;
+  margin: 8px 0;
 }

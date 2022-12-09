@@ -13,9 +13,9 @@ if($_SERVER ['REQUEST_METHOD'] === 'POST'){
 <div class="content-row2">
   <div class="admin-search">
     <h2 class="search-header">Thêm danh mục</h2>
-    <form action="" method="POST">
+    <form class="form-cartegory" action="" method="POST">
       <input name="cartegory_name" type="text" placeholder="Nhập tên danh mục">
-      <button type="submit">Thêm</button>
+      <button  class="btn"  type="submit">Thêm</button>
     </form>
   </div>
 </div>

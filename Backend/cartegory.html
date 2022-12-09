@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danh muc</title><link rel="stylesheet" href="/admin/cartegory.css">
+    <title>Danh muc</title><link rel="stylesheet" href="/Backend/cartegory.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -22,7 +22,7 @@
   </head>
   <body>
     <header>
-      <h1 class="cartegory-heading">Top</h1>
+      <h1 class="product-heading">Quản lí danh mục</h1>
     </header>
     <section class="admin-content">
       <div class="content-row1">
@@ -55,12 +55,11 @@
 
       </div>
       <div class="content-row2">
-        <div class="admin-search cartegory_add">
+        <div class="admin-search">
           <h2 class="search-header">Thêm danh mục</h2>
-          <form action="" method="POST">
-            <input name="cartegory_name" type="text" placeholder="Nhập tên danh
-              mục">
-            <button type="submit">Thêm</button>
+          <form class="form-cartegory" action="" method="POST">
+              <input name="cartegory_name" type="text" placeholder="Nhập tên danh mục">
+              <button class="btn" type="submit">Thêm</button>
           </form>
         </div>
       </div>
