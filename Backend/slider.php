@@ -19,8 +19,8 @@
           </li>
           <li class="admin-navsub"><a href="">Sản phẩm</a>
             <ul class="nav-navsub">
-              <li class="navsub-item"><a href="" class="sublink">Thêm sản phẩm</a></li>
-              <li class="navsub-item"><a href="" class="sublink">Danh mục sản
+              <li class="navsub-item"><a href="product_add.php" class="sublink">Thêm sản phẩm</a></li>
+              <li class="navsub-item"><a href="product_list.php" class="sublink">Danh mục sản
                   phẩm</a></li>
 
             </ul>
