@@ -83,38 +83,6 @@ class product{
     }
     return $result;
   } 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
   public function get_brand($brand_id)
   {
     $query = "SELECT * FROM tbl_brand WHERE brand_id = '$brand_id'";
