@@ -23,33 +23,6 @@ class brand {
     return $result;
 
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   public function insert_brand($cartegory_id,$brand_name)
   {
     $query  = "INSERT INTO tbl_brand(cartegory_id,brand_name) VALUES ('$cartegory_id','$brand_name')";

@@ -12,9 +12,13 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.0.0/css/all.min.css" />
   <script src="https://kit.fontawesome.com/1147679ae7.js"></script>
+  <script src="ckeditor/ckeditor.js"></script>
+  <script src="ckfinder/ckfinder.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
-<header>
-      <h1 class="product-heading">Trang quản lí </h1>
-    </header>
+  <header>
+    <h1 class="product-heading">Trang quản lí </h1>
+  </header>
