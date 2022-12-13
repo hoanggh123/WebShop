@@ -1,7 +1,6 @@
 <?php
-include "config.php";
+include "../Backend/config.php";
 ?>
-
 <?php
               Class Database{
               public $host= DB_HOST;

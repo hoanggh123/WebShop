@@ -1,5 +1,5 @@
 <?php
-include "database.php"
+include "../Backend/database.php"
 ?>
 <?php
 class cartegory {
@@ -18,10 +18,9 @@ class cartegory {
     return $result;
   }
   public function show_cartegory(){ 
-    $query = "SELECT * FROM tbl_cartegory ORDER BY cartegory_id DESC";
+    $query = "SELECT * FROM tbl_cartegory ORDER BY cartegory_id asc";
     $result = $this->db->select($query);
     return $result;
-
   }
   public function get_cartegory($cartegory_id)
   {

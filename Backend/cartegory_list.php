@@ -2,7 +2,6 @@
 include "header.php";
 include "slider.php";
 include "Class/cartegory_class.php";
-
 ?>
 <?php
 $cartegory = new cartegory;

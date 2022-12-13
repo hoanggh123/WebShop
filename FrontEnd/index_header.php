@@ -1,16 +1,23 @@
+<?php
+require_once ('../Backend/Class/cartegory_class.php');
+?>
+<?php
+$cartegory = new cartegory;
+$show_cartegory = $cartegory->show_cartegory();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>IVY Moda</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link href="https://fonts.googleleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=vietnamses"
-    rel="stylesheet"/>
-    <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.0.0/css/all.min.css">
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.0.0/css/all.min.css">
   <!-- <link rel="stylesheet" href="/assets/fonts/fontawesome-free-6.0.0/css/all.min.css"/> -->
   <script src="https://kit.fontawesome.com/1147679ae7.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
@@ -22,222 +29,19 @@
   <section>
     <div class="header">
       <ul class="nav-item">
-        <!-- <li class="item-link"> -->
-        <a class="link-label" href="">NỮ </a>
-        <ul class="subnav"></ul>
-        </li>
         <li class="item-link">
-          <a class="link-label" href="">NAM </a>
-          <ul class="subnav men">
-            <div class="sub-title">
-              <div class="sub-list">
-                <p class="sub-heading sub-link">METAGENT</p>
-                <p class="sub-heading sub-link sub-children">
-                  Essential Sweatsuit Men
-                </p>
-                <p class="sub-heading sub-link sub-children">
-                  FW2021- Sale 50%
-                </p>
-                <p class="sub-heading sub-link sub-children">
-                  Clearance Sale up to 80%
-                </p>
-              </div>
-              <div class="sub-list">
-                <p class="sub-heading sub-link">ÁO</p>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">Áo thun</a>
-                </li>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">Áo polo</a>
-                </li>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">Áo sơ mi</a>
-                </li>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">Áo len</a>
-                </li>
-              </div>
-
-              <div class="sub-list">
-                <p class="sub-heading sub-link">ÁO KHOÁC</p>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">Áo vest</a>
-                </li>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">Áo khoác</a>
-                </li>
-              </div>
-
-              <div class="sub-list">
-                <p class="sub-heading sub-link">QUẦN NAM</p>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">Quần jeans</a>
-                </li>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">Quần lửng/short</a>
-                </li>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">Quần dài</a>
-                </li>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">Quần khaki</a>
-                </li>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">Quần tây</a>
-                </li>
-              </div>
-              <div class="sub-list">
-                <p class="sub-heading sub-link">GIÀY & DÉP</p>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">Giày/Dép</a>
-                </li>
-              </div>
-              <div class="sub-list">
-                <p class="sub-heading sub-link">PHỤ KIỆN</p>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">Phụ kiện</a>
-                </li>
-              </div>
-            </div>
-          </ul>
-        </li>
-        <li class="item-link">
-          <a class="link-label" href="">TRẺ EM </a>
-          <ul class="subnav children">
-            <div class="sub-title">
-              <div class="sub-list">
-                <p class="sub-heading sub-link">Hàng mới về</p>
-                <p class="sub-heading sub-link sub-children">
-                  Fashion Show SS 2022
-                </p>
-                <p class="sub-heading sub-link sub-children">
-                  Adorable Sweatsuit
-                </p>
-              </div>
-              <div class="sub-list">
-                <p class="sub-heading sub-link">Bé gái</p>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">Áo bé gái</a>
-                </li>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">Quần bé gái</a>
-                </li>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">Váy bé gái</a>
-                </li>z
-                <li class="sub-item">
-                  <a href="" class="sub-collection">Chân váy bé gái</a>
-                </li>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">Phụ kiện bé gái</a>
-                </li>
-              </div>
-              <div class="sub-list">
-                <p class="sub-heading sub-link">Bé trai</p>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">Áo bé trai</a>
-                </li>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">Quần bé trai</a>
-                </li>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">Phụ kiện bé trai</a>
-                </li>
-              </div>
-            </div>
-          </ul>
-        </li>
-        <li class="item-link">
-          <a class="link-label" href="">BỘ SƯU TẬP </a>
-          <ul class="subnav subnav-list">
-            <div class="sub-title">
-              <div class="sub-list">
-                <p class="sub-heading sub-link">Nữ</p>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">FALL'S CALLING</a>
-                </li>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">CBe Bright Be Brilliant</a>
-                </li>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">Discover Charming</a>
-                </li>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">VIBRANT VACAY</a>
-                </li>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">Elevated Simplicity</a>
-                </li>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">Spring Love</a>
-                </li>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">Hoàng Cúc Collection</a>
-                </li>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">Artisan Collection: Wool
-                    Coat</a>
-                </li>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">Art Station</a>
-                </li>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">Ladies, Suit up!</a>
-                </li>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">Getting Cozy</a>
-                </li>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">New Secret</a>
-                </li>
-              </div>
-              <div class="sub-list">
-                <p class="sub-heading sub-link">Nam</p>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">New Polo for Men</a>
-                </li>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">Nature Soft</a>
-                </li>
-              </div>
-              <div class="sub-list">
-                <p class="sub-heading sub-link">Trẻ em</p>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">COTTON KHÁNG KHUẨN</a>
-                </li>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">Adorable Sweatsuit</a>
-                </li>
-                <li class="sub-item">
-                  <a href="" class="sub-collection">Draw the Dream</a>
-                </li>
-              </div>
-            </div>
-          </ul>
-        </li>
-        <li class="item-link">
-          <a class="link-label" href="">LIFESTYLE </a>
-        </li>
-        <li class="item-link">
-          <a class="link-label" href="">VỀ CHÚNG TÔI </a>
-          <ul class="subnav">
-            <li class="sub-item">
-              <a href="" class="sub-link">Về IVY moda</a>
-            </li>
-            <li class="sub-item">
-              <a href="" class="sub-link">Chính sách thẻ thành viên</a>
-            </li>
-            <li class="sub-item">
-              <a href="" class="sub-link">Bảo hành trọn đờ</a>
-            </li>
-            <li class="sub-item">
-              <a href="" class="sub-link">Chính sách đổi trả</a>
-            </li>
-            <li class="sub-item">
-              <a href="" class="sub-link">Hệ thống cửa hàng</a>
-            </li>
-            <li class="sub-item"><a href="" class="sub-link">Q&A</a></li>
-          </ul>
+          <?php
+        if ($show_cartegory) {
+          $i = 0;
+          while ($result = $show_cartegory->fetch_assoc()) {
+            $i++;
+        ?>
+          <a class="link-label" href=""><?php echo  $result['cartegory_name'] 
+            ?></a>
+          <?php
+          }
+        }
+         ?>
         </li>
       </ul>
       <div class="img">
