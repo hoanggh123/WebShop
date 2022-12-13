@@ -29,20 +29,18 @@ $show_cartegory = $cartegory->show_cartegory();
   <section>
     <div class="header">
       <ul class="nav-item">
-        <li class="item-link">
-          <?php
+        <?php
         if ($show_cartegory) {
           $i = 0;
           while ($result = $show_cartegory->fetch_assoc()) {
             $i++;
         ?>
-          <a class="link-label" href=""><?php echo  $result['cartegory_name'] 
-            ?></a>
-          <?php
+        <li class="item-link"> <a class="link-label" href=""><?php echo  $result['cartegory_name'] 
+            ?></a> </li>
+        <?php
           }
         }
          ?>
-        </li>
       </ul>
       <div class="img">
         <a href=""></a>
@@ -78,7 +76,6 @@ $show_cartegory = $cartegory->show_cartegory();
                   <th class="header-product">Sản phẩm</th>
                   <th class="header-item">Giá</th>
                   <th class="header-item">Số lượng</th>
-
                 </tr>
               </th>
               <tbody>
