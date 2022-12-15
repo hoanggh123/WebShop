@@ -1,5 +1,6 @@
 <?php
 require_once ('../Backend/Class/cartegory_class.php');
+
 ?>
 <?php
 $cartegory = new cartegory;
@@ -36,7 +37,7 @@ $show_cartegory = $cartegory->show_cartegory();
             $i++;
         ?>
         <li class="item-link"> <a class="link-label" href=""><?php echo  $result['cartegory_name'] 
-            ?></a> </li>
+            ?></a></li>
         <?php
           }
         }
@@ -79,18 +80,16 @@ $show_cartegory = $cartegory->show_cartegory();
                 </tr>
               </th>
               <tbody>
-                <tr>
-
-                </tr>
               </tbody>
             </table>
           </form>
+
+          <div class="footer-cart">
+            <p class="footer-total">
+              Tổng cộng:<span class="price-total">0đ</span>
+            </p>
+            <a href="cartshop.html"><button class="shopping">Xem giỏ hàng</button></a>
+          </div>
         </section>
-        <div class="footer-cart">
-          <p class="footer-total">
-            Tổng cộng:<span class="price-total">0đ</span>
-          </p>
-          <a href="cartshop.html"><button class="shopping">Xem giỏ hàng</button></a>
-        </div>
       </div>
     </div>
