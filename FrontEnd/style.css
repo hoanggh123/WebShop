@@ -32,13 +32,13 @@ a {
 
 /*Header*/
 .header {
-  margin:  0 auto;
+  margin: 0 auto;
   width: 1380px;
   top: 0;
   left: 0;
   right: 0;
   z-index: 15;
-  /* position: fixed; */
+  position: fixed;
   display: flex;
   background-color: #ffffff;
   height: 80px;
@@ -52,7 +52,6 @@ a {
 .item-link {
   padding: 0 8px;
   position: relative;
-
   margin: 0 4px;
 }
 .link-label {
@@ -203,7 +202,7 @@ a {
 }
 td {
   padding: 8px 0;
-} 
+}
 .table-cart {
   width: 100%;
   height: 565px;
@@ -242,10 +241,10 @@ td {
   width: 200px;
 }
 .footer-cart {
-  margin-top: 15px;
+  margin: 15px 0;
   text-align: center;
 }
-.footer-total {
+.cart_total {
   float: right;
   font-size: 18px;
   margin: 8px 12px;
@@ -355,7 +354,7 @@ td {
 }
 .product-item {
   width: 20%;
-  padding:  12px 8px;
+  padding: 12px 8px;
 }
 .img-cart {
   width: 100%;
@@ -624,4 +623,3 @@ td {
   padding: 0 0 24px 0;
 }
 /*Product*/
-

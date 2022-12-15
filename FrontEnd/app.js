@@ -18,30 +18,38 @@ addbtn.forEach(function (button, index) {
       var priceProduct = product.querySelector(".price").innerText;
       console.log(imgProduct, nameProduct, priceProduct);
       addCart(imgProduct, nameProduct, priceProduct);
-      totalCart() 
     }
   });
 });
 function addCart(imgProduct, nameProduct, priceProduct) {
   var addTr = document.createElement("tr");
   var trContent =
-    '<tr class="trCart"><td class="container-name"><img src="' +
+    '<tr><td class="container-name"><img src="' +
     imgProduct +
     '" class="cart-img" alt="" /><p class="cart-name">' +
     nameProduct +
     '</p></td><td class="container-item"><p><span class="price">' +
     priceProduct +
-    '</span><sup>đ</sup></p></td><td class="container-item"><input type="number" value="1" min="1" class="input-cart" /></td><td class="cart-remove"><span class="delete">Xóa</span></td></tr>';
+    '</span><sup>đ</sup></p></td><td class="container-item"><input class="input-cart" type="number"  value="1" min="0"></td><td class="cart-remove"><p class="delete">Xóa</p></td></tr>';
   addTr.innerHTML = trContent;
   var cartTable = document.querySelector("tbody");
   cartTable.append(addTr);
+  totalCart();
 }
-
 function totalCart() {
-  var cartItems = document.querySelectorAll(".trCart");
-  for (let i = 0; i < i.length; i++) {
-    var inputValue = cartItems[i].querySelector(".input-cart").value
-    console.log(inputValue); 
-    var priceValue = cartItems[i].querySelector(".price").value
+  var cartItems = document.querySelectorAll("tbody tr");
+  var totalCartC = 0;
+  for (var i = 0; i < cartItems.length; i++) {
+    var inputValue = cartItems[i].querySelector("input").value;
+    console.log(inputValue);
+    var priceValue = cartItems[i].querySelector("span").innerHTML;
+    console.log(priceValue);
+    totalCartA = inputValue * priceValue * 1000;
+    totalCartC = totalCartC + totalCartA;
+    var totalCartD = totalCartC.toLocaleString("de-DE");
   }
+
+  var totalCartA = document.querySelector(".price-total");
+  totalCartA.innerHTML = totalCartD;
+  console.log(totalCartA);
 }
