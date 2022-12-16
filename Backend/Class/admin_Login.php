@@ -31,6 +31,9 @@
       if($result != false){
         $value = $result->fetch_assoc()();
         Session::set('admin_Login', true);
+        Session::set('admin_Id', $value['admin_Id']);
+        Session::set('admin_Name', $value['admin_Name']);
+        Session::set('admin_User', $value['admin_User']);
       }
     }
     }
